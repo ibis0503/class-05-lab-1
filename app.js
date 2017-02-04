@@ -11,7 +11,7 @@ function sum (num1, num2) {
   return [(num1 + num2), sum];
 }
 // Here is the test for sum(); uncomment it to run it
-sum(4,7);
+
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -21,9 +21,13 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+function multiply(x,y){
+  var product = 'The product of ' + x + ' and ' + y + ' is '  + [(x * y)] +'.';
+  return [(x * y), product];
+}
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(4,7);
+// testMultiply(4,7);
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 
@@ -40,7 +44,9 @@ function sumAndMultiply (num1, num2, num3) {
   return [(num1 + num2 + num3), (num1*num2*num3),'4 and 7 and 5 sum to 16.', 'The product of 4 and 7 and 5 is 140.'];
 }
 // Here is the test for sumAndMultiply(); uncomment it to run it
+
 sumAndMultiply(4,7,5);
+
 
 // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. don't forget to create a new branch for your work on the next question!
 
@@ -51,7 +57,7 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-testArray = [2,3,4];
+// testArray = [2,3,4];
 
 // Here is the test for sumArray(); uncomment it to run it
 // testSumArray(testArray);
@@ -98,26 +104,26 @@ function testMultiply() {
   }
 }
 
-function testSumAndMultiply() {
-  if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
-    console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
-  } else {
-    console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
-  }
-}
-
-function testSumArray() {
-  if (sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
-    console.log('%c TEST FOR sumArray() PASSES', 'color: green');
-  } else {
-    console.log('%c TEST FOR sumArray() FAILS', 'color: red');
-  }
-}
-
-function testMultiplyArray() {
-  if (multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
-    console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
-  } else {
-    console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
-  }
-}
+// function testSumAndMultiply() {
+//   if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
+//     console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
+//   } else {
+//     console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
+//   }
+// }
+//
+// function testSumArray() {
+//   if (sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
+//     console.log('%c TEST FOR sumArray() PASSES', 'color: green');
+//   } else {
+//     console.log('%c TEST FOR sumArray() FAILS', 'color: red');
+//   }
+// }
+//
+// function testMultiplyArray() {
+//   if (multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
+//     console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
+//   } else {
+//     console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
+//   }
+// }
