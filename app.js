@@ -129,11 +129,11 @@ function testSumArray() {
     console.log('%c TEST FOR sumArray() FAILS', 'color: red');
   }
 }
-//
-// function testMultiplyArray() {
-//   if (multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
-//     console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
-//   } else {
-//     console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
-//   }
-// }
+
+function testMultiplyArray() {
+  if (multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
+    console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
+  }
+}
